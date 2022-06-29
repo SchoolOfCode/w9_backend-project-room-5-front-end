@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-//This is the Sam Branchi. 
+//This is the Sam Branchi.
 import __dirname from "./dirname.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
@@ -8,15 +8,14 @@ import logger from "morgan";
 // A new line added to Fabian
 import router from "./routes/lessons.js";
 
-function sam(){
-  return "The Best"
-}
-=======
-//This is Fabiano Fabian
-function fabian(){
-  return "Hello World..."
+function sam() {
+  return "The Best";
 }
 
+//This is Fabiano Fabian
+function fabian() {
+  return "Hello World...";
+}
 
 const app = express();
 
