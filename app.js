@@ -8,6 +8,10 @@ import logger from "morgan";
 // A new line added to Fabian
 import router from "./routes/lessons.js";
 //This is Fabiano Fabian
+function fabian(){
+  return "Hello World..."
+}
+
 const app = express();
 
 app.use(logger("dev"));
