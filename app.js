@@ -7,7 +7,9 @@ import cors from "cors";
 import logger from "morgan";
 //Comment in Sam's branch
 import router from "./routes/lessons.js";
-
+function sam(){
+  return "The Best"
+}
 const app = express();
 
 app.use(logger("dev"));
