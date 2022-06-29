@@ -7,7 +7,8 @@
     "dbcreate": "node -r dotenv/config ./db/scripts/createAttendeesTable.js",
     "start": "node -r dotenv/config ./bin/www.js",
     "dev": "nodemon -r dotenv/config ./bin/www.js",
-    "db:createusers": "node ./db/scripts/users/createTable.js"
+    "db:createusers": "node ./db/scripts/users/createTable.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,12 +16,13 @@
     "debug": "~2.6.9",
     "dotenv": "^16.0.1",
     "express": "~4.16.1",
-    "jest": "^28.1.1",
     "jest-fetch-mock": "^3.0.3",
     "morgan": "~1.9.1",
     "pg": "^8.7.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   }
 }
