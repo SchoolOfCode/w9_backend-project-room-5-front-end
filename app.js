@@ -7,10 +7,16 @@ import cors from "cors";
 import logger from "morgan";
 // A new line added to Fabian
 import router from "./routes/lessons.js";
+
+function sam(){
+  return "The Best"
+}
+=======
 //This is Fabiano Fabian
 function fabian(){
   return "Hello World..."
 }
+
 
 const app = express();
 
